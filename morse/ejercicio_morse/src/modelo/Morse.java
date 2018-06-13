@@ -1,0 +1,75 @@
+package modelo;
+
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+public class Morse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> letra=new ArrayList<>();
+		letra.add("A");letra.add("B");letra.add("C");letra.add("D");letra.add("E");
+		letra.add("F");letra.add("G");letra.add("H");letra.add("I");letra.add("J");
+		letra.add("K");letra.add("L");letra.add("M");letra.add("N");letra.add("O");
+		letra.add("P");letra.add("Q");letra.add("R");letra.add("S");letra.add("T");
+		letra.add("U");letra.add("V");letra.add("W");letra.add("X");letra.add("Y");
+		letra.add("Z");letra.add("1");letra.add("2");letra.add("3");letra.add("4");
+		letra.add("5");letra.add("6");letra.add("7");letra.add("8");letra.add("9");letra.add("0");
+		
+		ArrayList<String> morse=new ArrayList<>();
+		morse.add(".-");morse.add("-...");morse.add("-.-.");morse.add("-..");morse.add(".");
+		morse.add("..-.");morse.add("--.");morse.add("....");morse.add("..");morse.add(".---");
+		morse.add("-.-");morse.add(".-..");morse.add("--");morse.add("-.");morse.add("---");
+		morse.add(".--.");morse.add("--.-");morse.add(".-.");morse.add("...");morse.add("-");
+		morse.add("..-");morse.add("...-");morse.add(".--");morse.add("-..-");morse.add("-.--");
+		morse.add("--..");morse.add(".----");morse.add("..---");morse.add("...--");morse.add("....-");
+		morse.add(".....");morse.add("-....");morse.add("--...");morse.add("---..");morse.add("----.");
+		morse.add("-----");
+		
+		
+		String cad="1........Letra-Morse\n";
+		cad+="2........Morse-Letra\n";
+		cad+="3........Salir\n";
+		cad+="Elige una opcion";
+		int op=0, ind=-1;
+		do{
+			op=Integer.parseInt(JOptionPane.showInputDialog(cad));
+			String res="";
+			switch (op) {
+			case 1:
+				String entrada=JOptionPane.showInputDialog("Ingresa la cadena");
+				String [] cadena, valor; 
+				cadena=entrada.split(" ");
+				
+				for (String val : cadena) {
+					valor = val.split("");
+					for (String ren : valor) {
+						ind=letra.indexOf(ren);
+						res+=morse.get(ind);
+						res+=" ";
+					}
+					res+="   ";
+				}
+				JOptionPane.showMessageDialog(null, "Morse: "+res);
+				break;
+			case 2:
+				entrada=JOptionPane.showInputDialog("Ingresa la cadena");
+				cadena=entrada.split("   ");
+				
+				for (String val : cadena) {
+					valor = val.split(" ");
+					for (String ren : valor) {
+						ind=morse.indexOf(ren);
+						res+=letra.get(ind);
+					}
+					res+=" ";
+				}
+				JOptionPane.showMessageDialog(null, "Cadena: "+res);
+				break;
+			}
+			
+		}while(op!=3);
+	}
+
+}

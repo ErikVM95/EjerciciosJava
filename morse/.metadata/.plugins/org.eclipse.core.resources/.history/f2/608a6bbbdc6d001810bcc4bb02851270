@@ -1,0 +1,13 @@
+package modelo;
+
+import java.util.ArrayList;
+
+public class Morse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> morse=new ArrayList<>();
+		morse.add("A");
+	}
+
+}

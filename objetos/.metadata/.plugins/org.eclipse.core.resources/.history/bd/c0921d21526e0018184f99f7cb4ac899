@@ -1,0 +1,17 @@
+package modelo;
+
+import javax.swing.JOptionPane;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String lado=JOptionPane.showInputDialog("Ingresa el dato (Lado)");
+		
+		String menu="";
+		menu="";
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package modelo;
+
+public class Cubo extends Cuadrado{
+	
+	public int CalcularVolumen(){
+		return getLado()*getLado()*getLado();
+	}
+	
+	public int CalcularPerimetro(){
+		return 12*getLado();
+	}
+	
+}

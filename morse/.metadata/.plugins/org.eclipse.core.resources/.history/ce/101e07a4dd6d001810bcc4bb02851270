@@ -1,0 +1,19 @@
+package modelo;
+
+import java.util.ArrayList;
+
+public class Morse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> morse=new ArrayList<>();
+		morse.add("A");morse.add("B");morse.add("C");morse.add("D");morse.add("E");
+		morse.add("F");morse.add("G");morse.add("H");morse.add("I");morse.add("J");
+		morse.add("K");morse.add("L");morse.add("M");morse.add("N");morse.add("O");
+		morse.add("P");morse.add("Q");morse.add("R");morse.add("S");morse.add("T");
+		morse.add("U");morse.add("V");morse.add("W");morse.add("X");morse.add("Y");
+		morse.add("Z");morse.add("1");morse.add("2");morse.add("3");morse.add("4");
+		morse.add("5");morse.add("6");morse.add("7");morse.add("8");morse.add("9");morse.add("0");
+	}
+
+}

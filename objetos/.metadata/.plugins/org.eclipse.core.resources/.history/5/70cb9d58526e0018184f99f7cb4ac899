@@ -1,0 +1,20 @@
+package modelo;
+
+import javax.swing.JOptionPane;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String lado=JOptionPane.showInputDialog("Ingresa el dato (Lado)");
+		
+		String menu="";
+		menu+="1..........Calcular Area (cuadrado)";
+		menu+="2..........Calcular Perimetro (cuadrado)";
+		menu+="3..........Calcular Volumen (cubo)";
+		menu+="4..........Calcular Perimetro (cubo)";
+		
+	}
+
+}

@@ -1,0 +1,33 @@
+package modelo;
+
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+public class Morse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> letra=new ArrayList<>();
+		letra.add("A");letra.add("B");letra.add("C");letra.add("D");letra.add("E");
+		letra.add("F");letra.add("G");letra.add("H");letra.add("I");letra.add("J");
+		letra.add("K");letra.add("L");letra.add("M");letra.add("N");letra.add("O");
+		letra.add("P");letra.add("Q");letra.add("R");letra.add("S");letra.add("T");
+		letra.add("U");letra.add("V");letra.add("W");letra.add("X");letra.add("Y");
+		letra.add("Z");letra.add("1");letra.add("2");letra.add("3");letra.add("4");
+		letra.add("5");letra.add("6");letra.add("7");letra.add("8");letra.add("9");letra.add("0");
+		
+		ArrayList<String> morse=new ArrayList<>();
+		morse.add(".-");morse.add("-...");morse.add("-.-.");morse.add("-..");morse.add(".");
+		morse.add("..-.");morse.add("--.");morse.add("....");morse.add("..");morse.add(".---");
+		morse.add("-.-");morse.add(".-..");morse.add("--");morse.add("-.");morse.add("---");
+		morse.add(".--.");morse.add("--.-");morse.add(".-.");morse.add("...");morse.add("-");
+		morse.add("..-");morse.add("...-");morse.add(".--");morse.add("-..-");morse.add("-.--");
+		morse.add("--..");morse.add(".----");morse.add("..---");morse.add("...--");morse.add("....-");
+		morse.add(".....");morse.add("-....");morse.add("--...");morse.add("---..");morse.add("----.");
+		morse.add("-----");
+		
+		
+	}
+
+}

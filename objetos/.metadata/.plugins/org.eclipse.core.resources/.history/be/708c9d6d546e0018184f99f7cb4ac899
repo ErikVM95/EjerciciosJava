@@ -1,0 +1,50 @@
+package modelo;
+
+import javax.swing.JOptionPane;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cuadrado c1=new Cuadrado();
+		Cubo c2=new Cubo();
+		
+		int op=0;
+		int res, lado=Integer.parseInt(JOptionPane.showInputDialog("Ingresa el dato (Lado)"));
+		do{
+			String menu="";
+			menu+="1..........Calcular Area (cuadrado)\n";
+			menu+="2..........Calcular Perimetro (cuadrado)\n";
+			menu+="3..........Calcular Volumen (cubo)\n";
+			menu+="4..........Calcular Perimetro (cubo)\n";
+			menu+="5..........Cancelar\n";
+			menu+="6..........Salir\n";
+			menu+="Elige una opción";
+			
+			op=Integer.parseInt(JOptionPane.showInputDialog(menu));
+			
+			switch (op) {
+			case 1:
+				res = c1.calcularArea(lado);
+				break;
+			case 2:
+				
+				break;
+			case 3:
+				System.out.println(lado+"\n");
+				System.out.println("Volumen Cubo\n");
+				break;
+			case 4:
+				System.out.println(lado+"\n");
+				System.out.println("Perimetro Cubo\n");
+				break;
+			case 5:
+				lado=JOptionPane.showInputDialog("Ingresa el dato (Lado)");
+				System.out.println(lado+"\n");
+				break;
+			}
+		}while(op!=6);
+		
+	}
+
+}
